@@ -28,7 +28,25 @@ print "Buzz" instead.
 
 When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible
 by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those). */
+
 for (let i = 1; i <= 100; i++) {
+    switch (i) {
+        case i % 3 === 0 && i % 5 === 0:
+            console.log("FizzBuzz");
+            break;
+        case i % 3 === 0:
+            console.log("Fizz");
+            break;
+        case i % 5 === 0:
+            console.log("Buzz");
+            break;
+        default:
+            console.log(i);
+            break;
+    }
+}
+
+/* for (let i = 1; i <= 100; i++) {
     // console.log(i);
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz");
@@ -39,4 +57,4 @@ for (let i = 1; i <= 100; i++) {
     } else {
         console.log(i);
     }
-}
+} */
