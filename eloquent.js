@@ -69,6 +69,7 @@ let size = 8;
 function createLines (val) {
     let line1;
     let line2;
+    let boardRows;
     for (let i = 1; i <= val; i++) {
         if (i % 2 === 0) {
             line1 += "#";
@@ -86,9 +87,17 @@ function createLines (val) {
             line2 += "#";
         }
     }
-    console.log(line1);
-    console.log(line2);
-    let boardRows = line1 + `\n${line2}`;
+    // console.log(line1);
+    // console.log(line2);
+
+    for (let j = 1; j <= val / 2; j++) {
+        if (j === 1) {
+            boardRows = line1 + `\n${line2}`;
+        } else {
+            boardRows += `\n${line1}\n${line2}`;
+        }
+    }
+
     console.log(boardRows);
 }
 
