@@ -71,13 +71,17 @@ console.log(string1); */
 } */
 
 let grid1 = " # # # #";
+let grid2 = "# # # # ";
 
-for (height = 0; height <= 7; height++) {
+for (height = 1; height <= 8; height++) {
     if (height % 2 === 0) {
-        grid1 += "\n# # # # ";
+        grid1 += `\n${grid1}`;
     } else {
-        grid1 += `\n${grid1}`
+        grid1 += `\n${grid2}`
     }
 }
 
 console.log(grid1);
+//test to see how many lines are generated.
+let lines = grid1.split("\n");
+console.log(lines);
