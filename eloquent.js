@@ -103,37 +103,6 @@ function createLines (val) {
 
 createLines(size);
 
-/* for (let height = 1; height <= size; height++) {
-    let boardHeight;
-    let boardWidth;
-    let boardWidth2;
-    for (let width = 1; width <= size; width++) {
-        
-        if (width % 2 === 0) {
-            boardWidth += "#";
-        } else if (width === 1) {
-            boardWidth = " ";
-        } else {
-            boardWidth += " ";
-        }
-        console.log(boardWidth);
-        
-        if (width % 2 === 0) {
-            boardWidth2 += " ";
-        } else if (width === 1) {
-            boardWidth2 = "#";
-        } else {
-            boardWidth2 += "#";
-        }
-        console.log(boardWidth2);
-        
-    }
-
-    console.log(boardWidth);
-    console.log(boardWidth2);
-    chessBoard = boardWidth + `\n${boardWidth2}`;
-} */
-
 
 /* let chessBoard;
 
