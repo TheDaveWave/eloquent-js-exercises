@@ -74,9 +74,9 @@ let grid1 = " # # # #";
 
 for (height = 0; height <= 7; height++) {
     if (height % 2 === 0) {
-        grid1 += "/n# # # # ";
+        grid1 += "\n# # # # ";
     } else {
-        grid1 += `/n${grid1}`
+        grid1 += `\n${grid1}`
     }
 }
 
