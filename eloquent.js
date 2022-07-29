@@ -61,13 +61,74 @@ there is either a space or a "#" character. The characters should form a chessbo
 When you have a program that generates this pattern, define a binding size = 8 and 
 change the program so that it works for any size, outputting a grid of the given width and height. */
 
-let chessBoard;
 
-for (let height = 1; height <= 8; height++) {
-    for (let width = 1; width <= 8; width++) {
+
+let chessBoard;
+let size = 8;
+
+for (let height = 1; height <= size; height++) {
+    let boardHeight;
+    let boardWidth;
+    let boardWidth2;
+    for (let width = 1; width <= size; width++) {
+        
+        if (width % 2 === 0) {
+            boardWidth += "#";
+        } else if (width === 1) {
+            boardWidth = " ";
+        } else {
+            boardWidth += " ";
+        }
+        console.log(boardWidth);
+        
+        if (width % 2 === 0) {
+            boardWidth2 += " ";
+        } else if (width === 1) {
+            boardWidth2 = "#";
+        } else {
+            boardWidth2 += "#";
+        }
+        console.log(boardWidth2);
         
     }
+
+    console.log(boardWidth);
+    console.log(boardWidth2);
+    chessBoard = boardWidth + `\n${boardWidth2}`;
 }
+
+/* let chessBoard;
+let size = 8;
+
+for (let height = 1; height <= size; height++) {
+    let boardHeight;
+    let boardWidth;
+    let boardWidth2;
+    for (let width = 1; width <= size; width++) {
+        if (height % 2 === 0) {
+            if (width % 2 === 0) {
+                boardWidth += "#";
+            } else if (width === 1) {
+                boardWidth = " ";
+            } else {
+                boardWidth += " ";
+            }
+            console.log(boardWidth);
+        } else {
+            if (width % 2 === 0) {
+                boardWidth2 += " ";
+            } else if (width === 1) {
+                boardWidth2 = "#";
+            } else {
+                boardWidth2 += "#";
+            }
+            console.log(boardWidth2);
+        }    
+    }
+    console.log(boardWidth);
+    console.log(boardWidth2);
+    chessBoard = boardWidth + `\n${boardWidth2}`;
+} */
 
 /* let chessBoard;
 
