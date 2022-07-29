@@ -66,7 +66,35 @@ change the program so that it works for any size, outputting a grid of the given
 let chessBoard;
 let size = 8;
 
-for (let height = 1; height <= size; height++) {
+function createLines (val) {
+    let line1;
+    let line2;
+    for (let i = 1; i <= val; i++) {
+        if (i % 2 === 0) {
+            line1 += "#";
+        } else if (i === 1) {
+            line1 = " ";
+        } else {
+            line1 += " ";
+        }
+
+        if (i % 2 === 0) {
+            line2 += " ";
+        } else if (i === 1) {
+            line2 = "#";
+        } else {
+            line2 += "#";
+        }
+    }
+    console.log(line1);
+    console.log(line2);
+    let boardRows = line1 + `\n${line2}`;
+    console.log(boardRows);
+}
+
+createLines(size);
+
+/* for (let height = 1; height <= size; height++) {
     let boardHeight;
     let boardWidth;
     let boardWidth2;
@@ -95,7 +123,7 @@ for (let height = 1; height <= size; height++) {
     console.log(boardWidth);
     console.log(boardWidth2);
     chessBoard = boardWidth + `\n${boardWidth2}`;
-}
+} */
 
 /* let chessBoard;
 let size = 8;
@@ -146,8 +174,8 @@ for (height = 1; height <= 8; height++) {
     }
 } */
 
-console.log(chessBoard);
+/* console.log(chessBoard);
 
 //test to see how many lines are generated.
 let lines = chessBoard.split("\n");
-console.log(lines);
+console.log(lines); */
