@@ -67,9 +67,9 @@ function createChessBoard (size) {
     for(i = 1; i <= size; i++) {
         for (j = 1; j <= size; j++) {
             if ((i + j) % 2 === 0) {
-                chessBoard += "#";
-            } else {
                 chessBoard += " ";
+            } else {
+                chessBoard += "#";
             }
         }
         chessBoard += "\n";
@@ -78,7 +78,7 @@ function createChessBoard (size) {
 }
 
 createChessBoard(8);
-
+createChessBoard(15);
 
 /* let chessBoard;
 let size = 8;
