@@ -79,3 +79,5 @@ for (height = 0; height <= 7; height++) {
         grid1 += `/n${grid1}`
     }
 }
+
+console.log(grid1);
