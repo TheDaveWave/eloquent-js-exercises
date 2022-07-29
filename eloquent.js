@@ -62,9 +62,21 @@ When you have a program that generates this pattern, define a binding size = 8 a
 change the program so that it works for any size, outputting a grid of the given width and height. */
 
 
+let size = 8;
+let chessBoard = "";
 
+for(i = 1; i <= size; i++) {
+    for (j = 1; j <= size; j++) {
+        if ((i + j) % 2 === 0) {
+            chessBoard += "#";
+        } else {
+            chessBoard += " ";
+        }
+    }
+    chessBoard += "\n";
+}
 
-
+console.log(chessBoard);
 
 
 /* let chessBoard;
