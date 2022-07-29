@@ -74,14 +74,19 @@ let grid1 = " # # # #";
 let grid2 = "# # # # ";
 
 for (height = 1; height <= 8; height++) {
-    if (height % 2 === 0) {
-        grid1 += `\n${grid1}`;
+    if (height === 1){
+        let chessBoard = grid1;
+        return chessBoard;
+    } else if (height % 2 === 0) {
+        chessBoard += `\n${grid1}`;
+        return chessBoard;
     } else {
-        grid1 += `\n${grid2}`
+        chessBoard += `\n${grid2}`;
+        return chessBoard;
     }
 }
+console.log(chessBoard);
 
-console.log(grid1);
 //test to see how many lines are generated.
-let lines = grid1.split("\n");
-console.log(lines);
+let lines = chessBoard.split("\n");
+console.log(chessBoard);
