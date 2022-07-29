@@ -61,11 +61,21 @@ there is either a space or a "#" character. The characters should form a chessbo
 When you have a program that generates this pattern, define a binding size = 8 and 
 change the program so that it works for any size, outputting a grid of the given width and height. */
 
-let string1 = "David said,\nhi";
-console.log(string1);
+/* let string1 = "David said,\nhi";
+console.log(string1); */
 
-for (let height = 0; height <= 7; height++) {
+/* for (let height = 0; height <= 7; height++) {
     for (let width = 0; width <= 7; width++) {
+        
+    }
+} */
 
+let grid1 = " # # # #";
+
+for (height = 0; height <= 7; height++) {
+    if (height % 2 === 0) {
+        grid1 += "/n# # # # ";
+    } else {
+        grid1 += `/n${grid1}`
     }
 }
