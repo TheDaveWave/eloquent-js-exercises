@@ -61,16 +61,15 @@ there is either a space or a "#" character. The characters should form a chessbo
 When you have a program that generates this pattern, define a binding size = 8 and 
 change the program so that it works for any size, outputting a grid of the given width and height. */
 
-/* let string1 = "David said,\nhi";
-console.log(string1); */
+let chessBoard;
 
-/* for (let height = 0; height <= 7; height++) {
-    for (let width = 0; width <= 7; width++) {
+for (let height = 1; height <= 8; height++) {
+    for (let width = 1; width <= 8; width++) {
         
     }
-} */
+}
 
-let chessBoard;
+/* let chessBoard;
 
 for (height = 1; height <= 8; height++) {
     
@@ -84,7 +83,8 @@ for (height = 1; height <= 8; height++) {
     } else {
         chessBoard += `\n${grid1}`;
     }
-}
+} */
+
 console.log(chessBoard);
 
 //test to see how many lines are generated.
