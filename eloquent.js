@@ -102,7 +102,8 @@ function createLines (val) {
 }
 
 createLines(size);
-
+createLines(10);
+createLines(11);
 /* for (let height = 1; height <= size; height++) {
     let boardHeight;
     let boardWidth;
