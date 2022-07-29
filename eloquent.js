@@ -70,23 +70,23 @@ console.log(string1); */
     }
 } */
 
-let grid1 = " # # # #";
-let grid2 = "# # # # ";
+let chessBoard;
 
 for (height = 1; height <= 8; height++) {
-    if (height === 1){
-        let chessBoard = grid1;
-        return chessBoard;
-    } else if (height % 2 === 0) {
-        chessBoard += `\n${grid1}`;
-        return chessBoard;
-    } else {
+    
+    let grid1 = " # # # #";
+    let grid2 = "# # # # ";
+
+    if (height % 2 === 0) {
         chessBoard += `\n${grid2}`;
-        return chessBoard;
+    } else if (height === 1) {
+        chessBoard = grid1;
+    } else {
+        chessBoard += `\n${grid1}`;
     }
 }
 console.log(chessBoard);
 
 //test to see how many lines are generated.
 let lines = chessBoard.split("\n");
-console.log(chessBoard);
+console.log(lines);
