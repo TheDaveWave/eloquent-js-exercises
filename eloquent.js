@@ -63,7 +63,11 @@ change the program so that it works for any size, outputting a grid of the given
 
 
 
-let chessBoard;
+
+
+
+
+/* let chessBoard;
 let size = 8;
 
 function createLines (val) {
@@ -101,7 +105,7 @@ function createLines (val) {
     console.log(boardRows);
 }
 
-createLines(size);
+createLines(size); */
 
 
 /* let chessBoard;
